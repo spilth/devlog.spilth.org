@@ -12,3 +12,12 @@ layout: default
 2012-12-07T00:42:47-05:00	Will fix tomorrow. Up way too late now.
 2012-12-07T09:17:06-05:00	Switched from commas to tabs, so this comma should work now
 2012-12-07T09:30:58-05:00	Today's lesson: make sure you're looking at localhost for changes to your output, not the S3 site that hasn't been updated yet.
+2012-12-07T11:33:36-05:00	So an incident that spurred the creation of this devlog...
+2012-12-07T11:33:59-05:00	I needed to generate a list of Subversion Repositories we have in Anthill Pro.
+2012-12-07T11:35:07-05:00	[RepositoryFactory](http://docs.urbancode.com/anthill-api-3.7/anthill3-remoting/api/com/urbancode/anthill3/domain/repository/RepositoryFactory.html) has the method `restoreAllForType(java.lang.Class<? extends Repository> repoType) ` which returns an array of `Repository`.
+2012-12-07T11:36:22-05:00	As I loop through them (in a Velocity template) I need to cast them to [SvnRepository](http://docs.urbancode.com/anthill-api-3.7/anthill3-remoting/api/com/urbancode/anthill3/domain/repository/svnrepository/SvnRepository.html) so I can call `getSvnRoot()` on them. So I needed to cast an array of one class it an array of its superclass.
+2012-12-07T11:37:27-05:00	I found the answer in his StackOverflow question: [How to convert object array to string array in Java](http://stackoverflow.com/a/1018798/8252).
+2012-12-07T11:37:45-05:00	So in the end, my code is doing this:
+2012-12-07T11:37:49-05:00	`Repository[] repos = RepositoryFactory.getInstance().restoreAllForType(SvnRepository.class);`
+2012-12-07T11:37:59-05:00	`SvnRepository[] svnRepos = Arrays.copyOf(repos, repos.length, SvnRepository[].class);`
+2012-12-07T11:47:10-05:00	I suppose I could've done the cast for each repo within the Velocity template as well.

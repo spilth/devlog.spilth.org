@@ -1,5 +1,6 @@
 module Jekyll
   require 'csv'
+  require 'rdiscount'
 
   class DevlogConverter < Converter
     safe true
@@ -24,7 +25,10 @@ module Jekyll
       CSV.parse(content, :col_sep => "\t") do |row|
         time = DateTime.parse(row[0])
         time = time.strftime("%H:%M")
-        new_content += "<tr id=\"m#{id}\"><td><a href=\"\#m#{id}\">#{time}</a></td><td>#{row[1]}</td></tr>"
+        entry = row[1]
+        entry_html = RDiscount.new(entry).to_html
+        puts entry_html
+        new_content += "<tr id=\"m#{id}\"><td><a href=\"\#m#{id}\">#{time}</a></td><td>#{entry_html}</td></tr>"
         id += 1
       end
 
