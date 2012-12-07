@@ -21,7 +21,7 @@ eos
       file = File.open(filename, 'a')
     end
 
-    file.puts "#{now},#{text}"
+    file.puts "#{now}\t#{text}"
 
     file.close
   end
