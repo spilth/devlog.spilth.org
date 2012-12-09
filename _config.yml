@@ -1,5 +1,4 @@
-auto: true
 markdown: rdiscount
 permalink: pretty
-exclude: devlog.rb, Rakefile, Gemfile, Gemfile.lock, _jekyll_s3.yml
+exclude: devlog.rb, Rakefile, Gemfile, Gemfile.lock, _jekyll_s3.yml, Rakefile
 
