@@ -10,7 +10,7 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
       body {
-        padding-top: 40px;
+        padding-top: 60px;
         padding-bottom: 40px;
       }
     </style>
@@ -27,13 +27,14 @@
       $(document).ready(function(){
         if (location.hash != "") {
           $(location.hash).addClass("success");
+          $('html, body').animate({scrollTop: $(location.hash).offset().top - 60}, 500);
         }
       })
     </script>
   </head>
 
   <body>
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -54,11 +55,9 @@
 
     <div class="container">
       <div class="content">
-        <div class="page-header">
-          <h1>{{ page.title }}</h1>
-        </div>
         <div class="row">
           <div class="span16">
+            <h1>{{ page.title }}</h1>
             {{ content }}
           </div>
         </div>
