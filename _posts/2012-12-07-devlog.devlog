@@ -21,3 +21,8 @@ layout: default
 2012-12-07T11:37:49-05:00	`Repository[] repos = RepositoryFactory.getInstance().restoreAllForType(SvnRepository.class);`
 2012-12-07T11:37:59-05:00	`SvnRepository[] svnRepos = Arrays.copyOf(repos, repos.length, SvnRepository[].class);`
 2012-12-07T11:47:10-05:00	I suppose I could've done the cast for each repo within the Velocity template as well.
+2012-12-07T11:56:39-05:00	Totally cheated and edited some entries using vim to fix borked Markdown syntax.
+2012-12-07T11:57:11-05:00	Need to consider the value of timestamped entries and limited/manual editing vs. stream of consciousness.
+2012-12-07T11:57:35-05:00	Stream of Consciousness probably doesn't mix well with formatting things for Markdown - it requires thought.
+2012-12-07T13:34:44-05:00	Is there any value/functionality to adding hashtag support? Like using #todo or #anthillpro to easily find all entries about a topic?
+2012-12-07T14:03:30-05:00	Sourcefu.com has a nice [search functionality](http://irclog.greptilian.com/search.pl?channel=sourcefu) but as my devlog is a static site currently I'd have to rely on google for searching the site. Weary of having to set up a web app for this... though I suppose [Sinatra](http://www.sinatrarb.com/) could be lightweight enough.

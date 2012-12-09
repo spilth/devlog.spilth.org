@@ -1,0 +1,9 @@
+---
+title: 2012-12-08
+layout: default
+---
+2012-12-08T17:43:05-05:00	While working in vim for my devlog project I wondered if there was a way to delete the surrounding quotes or brackets for a piece of text.
+2012-12-08T17:44:02-05:00	It doesn't look there's a native command but once again [Tim Pope](http://tpo.pe/) comes to the rescue with [vim-surround](https://github.com/tpope/vim-surround).
+2012-12-08T20:25:16-05:00	Working on moving common operations of devlog (log, generate, deploy/publish) into a Rakefile.
+2012-12-08T20:26:29-05:00	One interesting issue I ran into so far is that regular `gets` doesn't work inside Rake files.
+2012-12-08T20:26:50-05:00	There's an excellent explanation here: [How do I use “gets” on a rake task?](http://stackoverflow.com/a/577851)
