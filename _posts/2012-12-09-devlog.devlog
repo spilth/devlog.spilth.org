@@ -1,0 +1,8 @@
+---
+title: 2012-12-09
+layout: default
+---
+2012-12-09T00:12:03-05:00	One side effect of using Twitter Bootstrap's fixed navbar is that linking to specific IDs on a page (like /foo/#some_id) causes the element to be hidden by the navbar since browsers scroll that item to the top of the visible area.
+2012-12-09T00:12:31-05:00	I tried using [Scrollspy](http://twitter.github.com/bootstrap/javascript.html#scrollspy) provided by Twitter Bootstrap but that didn't seem to provide the functionality I wanted.
+2012-12-09T00:13:04-05:00	Instea I found helpful jQuery solution: [jQuery scroll To Element](http://stackoverflow.com/a/6677069).
+2012-12-09T00:14:52-05:00	Here's what I ended up using: `$('html, body').animate({scrollTop: $(location.hash).offset().top - 60}, 500);`
