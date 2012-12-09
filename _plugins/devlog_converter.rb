@@ -16,7 +16,7 @@ module Jekyll
     end
 
     def convert(content)
-      new_content = '<table class="table table-bordered table-striped table-condensed">'
+      new_content = '<table class="table table-bordered table-striped">'
       new_content += "<thead><tr><th>Time</th><th>Entry</th></tr></thead>"
       new_content += "<tbody>"
       # Loop through each line in file
@@ -27,7 +27,6 @@ module Jekyll
         time = time.strftime("%H:%M")
         entry = row[1]
         entry_html = RDiscount.new(entry).to_html
-        puts entry_html
         new_content += "<tr id=\"m#{id}\"><td><a href=\"\#m#{id}\">#{time}</a></td><td>#{entry_html}</td></tr>"
         id += 1
       end
