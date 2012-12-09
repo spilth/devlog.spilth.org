@@ -4,5 +4,24 @@ layout: default
 ---
 2012-12-09T00:12:03-05:00	One side effect of using Twitter Bootstrap's fixed navbar is that linking to specific IDs on a page (like /foo/#some_id) causes the element to be hidden by the navbar since browsers scroll that item to the top of the visible area.
 2012-12-09T00:12:31-05:00	I tried using [Scrollspy](http://twitter.github.com/bootstrap/javascript.html#scrollspy) provided by Twitter Bootstrap but that didn't seem to provide the functionality I wanted.
-2012-12-09T00:13:04-05:00	Instea I found helpful jQuery solution: [jQuery scroll To Element](http://stackoverflow.com/a/6677069).
+2012-12-09T00:13:04-05:00	Instead I found helpful jQuery solution: [jQuery scroll To Element](http://stackoverflow.com/a/6677069).
 2012-12-09T00:14:52-05:00	Here's what I ended up using: `$('html, body').animate({scrollTop: $(location.hash).offset().top - 60}, 500);`
+2012-12-09T00:21:03-05:00	It feels like taking notes about these sorts of things helps me in two ways
+2012-12-09T00:21:09-05:00	a) It forces me to think them through a little more
+2012-12-09T00:21:44-05:00	b) It helps solidify the solution I find a little more too
+2012-12-09T11:42:29-05:00	I'm taking a stab at adding template defaults to [Jekyll](https://github.com/mojombo/jekyll) and looking at the [Jekyll Cucumber Features](https://github.com/mojombo/jekyll/tree/master/features) is giving me some insight into how Cucumber makes writing feature specifications easier. I was previously confused about the value of having to write Cucumber specs and then step definitions for those specs but now I'm starting to see the flexibility and re-use.
+2012-12-09T11:59:00-05:00	So that's an example of how reading other people's code can be helpful, a suggestion I often see in books about software development.
+2012-12-09T12:28:09-05:00	Does Cucumber really only output `stack level too deep` when there's a problem with your spec? So far it has been a pain to debug what I'm doing wrong in the spec I'm trying to write.
+2012-12-09T12:28:34-05:00	Mainly I am missing required steps for what I'm trying to test but the error output doesn't help track that down at all.
+2012-12-09T13:26:26-05:00	Taking a break from Jekyll hacking as it's getting frustrating.
+2012-12-09T13:26:30-05:00	## A Header
+2012-12-09T13:26:46-05:00	Wondering how headers look in a table format for breaking up dev notes.
+2012-12-09T13:29:52-05:00	I could also look for lines starting with #'s and close the current table and start a new one.
+2012-12-09T13:30:06-05:00	The tables offer a nice way to timestamp and link to specific entries which I don't think I want to give up.
+2012-12-09T13:44:05-05:00	## Working Headers
+2012-12-09T13:44:56-05:00	Headers are working now but I'm still not sure if they make sense for this devlog. They require me knowing and stating that I'm thinking about something different from my previous entry. Or different enough to warrant a header.
+2012-12-09T13:46:00-05:00	I like how sourcefu's IRC-based serial approach doesn't allow for editing, even though I've gone back and fixed a few typos on things manually.
+2012-12-09T13:46:29-05:00	Guess I'll just leave the feature in for now and see if I like it or find it distracting.
+2012-12-09T13:49:05-05:00	It's also current a bit of a pain to use Markdown but then also add things like turning Headers into ID'd links/anchors.
+2012-12-09T13:52:06-05:00	TODO: Take a look at [Kramdown](http://kramdown.rubyforge.org/), a superset of Markdown, which supports [Specifying a Header ID](http://kramdown.rubyforge.org/syntax.html#specifying-a-header-id).
+2012-12-09T13:53:28-05:00	Jekyll supports Kramdown, so that's good.

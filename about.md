@@ -11,7 +11,7 @@ I wanted something lighter than IRC and Amazon EC2, so I'm using [Jekyll](https:
 
 Currently here is how it works:
 
-- I run [devlog.rb](https://github.com/spilth/devlog.spilth.org/blob/master/devlog.rb), enter my notes and it spits out files to `_posts` with a `.devlog` extension.
-- Jekyll is running in server mode (`jekyll --server`) and uses [devlog_converter.rb](https://github.com/spilth/devlog.spilth.org/blob/master/_plugins/devlog_converter.rb) to turn the `.devlog` files into HTML, applying Markdown as it goes.
-- Occassionally I run `jekyll-s3` to upload the site to Amazon S3.
+- I run `rake log`, enter my notes and it spits out files into the `_posts` directory using a `.devlog` extension.
+- Jekyll is running in server mode (`rake server`) and uses [devlog_converter.rb](https://github.com/spilth/devlog.spilth.org/blob/master/_plugins/devlog_converter.rb) to turn the `.devlog` files into HTML, applying Markdown as it goes.
+- Occassionally I run `rake upload` to upload the site to Amazon S3 using [jekyll-s3](https://github.com/laurilehmijoki/jekyll-s3).
 
