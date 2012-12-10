@@ -1,5 +1,6 @@
 require 'date'
 
+desc "Capture development notes on the command line"
 task :log do
   puts "Logging..."
 
