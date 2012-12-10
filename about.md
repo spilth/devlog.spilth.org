@@ -1,6 +1,6 @@
 ---
 title: About
-layout: default
+layout: index
 ---
 
 This is a project inspired by [http://sourcefu.com/](http://sourcefu.com/) and [Dave Winer's Work Notes](http://worknotes.scripting.com/).

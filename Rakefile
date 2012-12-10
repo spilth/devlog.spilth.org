@@ -14,7 +14,7 @@ task :log do
         file.puts <<eos
 ---
 title: #{title}
-layout: default
+layout: post
 ---
 eos
 

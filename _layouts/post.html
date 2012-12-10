@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="span12">
+    {% if page.previous %}
+      <a href="{{ page.previous.url }}">Previous</a>
+    {% else %}
+      Previous
+    {% endif %}
+     | 
+    {% if page.next %}
+      <a href="{{ page.next.url }}">Next</a>
+    {% else %}
+      Next
+    {% endif %}
+  </div>
+</div>
+<div class="row">
+  <div class="span12">
+    {{ content }}
+  </div>
+</div>
+<div class="row">
+  <div class="span12">
+    {% if page.previous %}
+      <a href="{{ page.previous.url }}">Previous</a>
+    {% else %}
+      Previous
+    {% endif %}
+     | 
+    {% if page.next %}
+      <a href="{{ page.next.url }}">Next</a>
+    {% else %}
+      Next
+    {% endif %}
+  </div>
+</div>
+

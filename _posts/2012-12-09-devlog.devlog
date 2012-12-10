@@ -1,6 +1,6 @@
 ---
 title: 2012-12-09
-layout: default
+layout: post
 ---
 2012-12-09T00:12:03-05:00	One side effect of using Twitter Bootstrap's fixed navbar is that linking to specific IDs on a page (like /foo/#some_id) causes the element to be hidden by the navbar since browsers scroll that item to the top of the visible area.
 2012-12-09T00:12:31-05:00	I tried using [Scrollspy](http://twitter.github.com/bootstrap/javascript.html#scrollspy) provided by Twitter Bootstrap but that didn't seem to provide the functionality I wanted.
@@ -25,3 +25,7 @@ layout: default
 2012-12-09T13:49:05-05:00	It's also current a bit of a pain to use Markdown but then also add things like turning Headers into ID'd links/anchors.
 2012-12-09T13:52:06-05:00	TODO: Take a look at [Kramdown](http://kramdown.rubyforge.org/), a superset of Markdown, which supports [Specifying a Header ID](http://kramdown.rubyforge.org/syntax.html#specifying-a-header-id).
 2012-12-09T13:53:28-05:00	Jekyll supports Kramdown, so that's good.
+2012-12-09T13:59:29-05:00	Test entry to see if sometimes headers end up inside table rows...
+2012-12-09T13:59:55-05:00	Something is causing that to happen but I'm not sure what yet.
+2012-12-09T22:05:12-05:00	Didn't make any more progress with adding default template layouts to Jekyll but it did inspire me to take another look at Cucumber and add [The Cucumber Book: Behaviour-Driven Development for Testers and Developers](http://pragprog.com/book/hwcuc/the-cucumber-book) to my Christmas wishlist.
+2012-12-09T22:07:26-05:00	And there's always the [Official Cucumber Site](http://cukes.info/).
