@@ -1,5 +1,4 @@
 module Jekyll
-  require 'csv'
   require 'rdiscount'
 
   class DevlogConverter < Converter
@@ -20,10 +19,13 @@ module Jekyll
       new_content = ""
 
       id = 1
-      CSV.parse(content, :col_sep => "\t") do |row|
+      content.each_line do |line|
+        row = line.split("\t")
+
         time = DateTime.parse(row[0])
         time = time.strftime("%H:%M")
         entry = row[1]
+
         entry_html = RDiscount.new(entry).to_html
         if entry.start_with?('#')
           if inside_table
