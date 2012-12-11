@@ -1,4 +1,13 @@
 markdown: rdiscount
 permalink: pretty
 exclude: devlog.rb, Rakefile, Gemfile, Gemfile.lock, _jekyll_s3.yml, Rakefile
+mini_magick:
+    thumbnail:
+        source: images/original
+        destination: images/thumbnail
+        resize: "140x140"
+    medium:
+        source: images/original
+        destination: images/medium
+        resize: "300x200"
 

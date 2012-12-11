@@ -4,3 +4,15 @@ layout: post
 ---
 2012-12-10T10:49:04-05:00	Added previous/next links on posts.
 2012-12-10T11:47:14-05:00	I want a continuous integration server that automagically discovers branches and creates build workflows for them.
+2012-12-10T13:10:24-05:00	I need a new image hosting/sharing tool. Flickr is never updated and requires too many clicks. Skitch is borked and has ridiculous URLs.
+2012-12-10T13:23:01-05:00	[jekyll-minimagick](https://github.com/zroger/jekyll-minimagick) might be a good image solution for my devlog at least. And maybe for my personal site when I write articles.
+2012-12-10T13:26:29-05:00	BUG: Using quotes in my devlog entries seems to cause a problem in the conversion process.
+2012-12-10T13:43:58-05:00	Perhaps I should switch from using CSV and just loop through each line and split on the tab. Not sure what CSV is really buying me except that it was a quick solution.
+2012-12-10T15:48:04-05:00	Testing "quotes".
+2012-12-10T17:16:58-05:00	![devlog in tmux](/images/thumbnail/devlog-tmux.png)
+2012-12-10T17:29:09-05:00	TODO: Allow scp upload as opposed to S3 via looking for a _jekyll_scp.yml file in the "upload" task.
+2012-12-10T17:30:56-05:00	TODO: Figure out how I can make a nice image macro that links thumbnails to full-sized images
+2012-12-10T17:53:41-05:00	Here's what it looks like when I'm logging my development notes: {% image devlog-tmux.png %}
+2012-12-10T22:39:15-05:00	Feeling a little silly about mixing Markdown syntax with custom Liquid Template Tags.
+2012-12-10T23:04:09-05:00	I'm mainly using Markdown for code snippets, URLs and headers (which I'm not sure I'll keep using anyways). So should I just make Liquid equivalents of those?
+2012-12-10T23:05:16-05:00	For some reason I really feel like I should only use one or the other.
