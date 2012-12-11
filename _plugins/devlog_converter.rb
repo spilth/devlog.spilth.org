@@ -20,13 +20,13 @@ module Jekyll
 
       id = 1
       content.each_line do |line|
-        row = line.split("\t")
+        data = line.split("\t")
 
-        time = DateTime.parse(row[0])
-        time = time.strftime("%H:%M")
-        entry = row[1]
+        time = DateTime.parse(data[0]).strftime("%H:%M")
+        entry = data[1]
 
         entry_html = RDiscount.new(entry).to_html
+        
         if entry.start_with?('#')
           if inside_table
             new_content += "</table>"

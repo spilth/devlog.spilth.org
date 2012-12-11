@@ -1,10 +1,12 @@
 require 'date'
+require 'readline'
 
 desc "Capture development notes on the command line"
 task :log do
   puts "Logging..."
 
-  while (text = STDIN.gets) do
+  #while (text = STDIN.gets) do
+  while (text = Readline.readline('> ', true)) do
     if text.chomp != ""
       now = DateTime.now
       filename = now.strftime("_posts/%Y-%m-%d-devlog.devlog")

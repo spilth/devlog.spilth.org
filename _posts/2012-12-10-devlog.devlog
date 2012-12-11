@@ -16,3 +16,10 @@ layout: post
 2012-12-10T22:39:15-05:00	Feeling a little silly about mixing Markdown syntax with custom Liquid Template Tags.
 2012-12-10T23:04:09-05:00	I'm mainly using Markdown for code snippets, URLs and headers (which I'm not sure I'll keep using anyways). So should I just make Liquid equivalents of those?
 2012-12-10T23:05:16-05:00	For some reason I really feel like I should only use one or the other.
+2012-12-10T23:18:15-05:00	Considering getting rid of Headers since I didn't use them today and they just make the code more complicated. Guess I'll just give it another day or two to see if I use them.
+2012-12-10T23:27:47-05:00	Wondering if there's any benefit to using [Readline](http://www.ruby-doc.org/stdlib-1.9.3/libdoc/readline/rdoc/Readline.html) as opposed to just `STDIN.gets`.
+2012-12-10T23:28:49-05:00	The prompt it provides is nice, I guess.
+2012-12-10T23:29:44-05:00	And apparently it has completion support? That's kind of neat but not sure if I'd really make use of it.
+2012-12-10T23:31:44-05:00	Some more documentation [http://bogojoker.com/readline/](http://bogojoker.com/readline/).
+2012-12-10T23:32:22-05:00	It also supports keyboard shortcuts, though some of those seem to conflict with tmux.
+2012-12-10T23:32:53-05:00	But it does seem to let me edit lines without having to delete/replace text. Okay, that's super useful and a reason to switch!
