@@ -1,3 +1,6 @@
+name: Personal Development Log of Brian Kelly
+description: Daily Development Logs of a Programmer
+url: http://devlog.spilth.org/
 markdown: rdiscount
 permalink: pretty
 exclude: devlog.rb, Rakefile, Gemfile, Gemfile.lock, _jekyll_s3.yml, Rakefile
