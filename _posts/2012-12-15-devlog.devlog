@@ -1,0 +1,12 @@
+---
+title: 2012-12-15
+layout: post
+---
+2012-12-15T13:50:42-05:00	Learning about Java Heap Size after a database migration using Ant failed with `java.lang.OutOfMemoryError: Java heap space`.
+2012-12-15T13:51:57-05:00	A very clear resource: [6 Common Errors in Setting Java Heap Size](http://javahowto.blogspot.com/2006/06/6-common-errors-in-setting-java-heap.html)
+2012-12-15T13:52:20-05:00	As well as [Build Failed java.lang.OutOfMemoryError: Java heap space](http://stackoverflow.com/questions/7494909/build-failed-java-lang-outofmemoryerror-java-heap-space)
+2012-12-15T13:53:06-05:00	The general suggestion is executing something like this before running Ant: `export ANT_OPTS=-Xmx1g`
+2012-12-15T14:15:51-05:00	You can use the following command to find out the default Max Heap Size: `java -XX:+PrintFlagsFinal | grep MaxHeapSize`
+2012-12-15T14:26:29-05:00	Another useful answer: [What is the default maximum heap size for Sun's JVM from Java SE 6?](http://stackoverflow.com/questions/2915276/what-is-the-default-maximum-heap-size-for-suns-jvm-from-java-se-6)
+2012-12-15T14:28:47-05:00	My friend Seth posted this Gmail interface for vim: [Vmail](http://danielchoi.com/software/vmail.html)
+2012-12-15T14:29:01-05:00	It's neat but I don't think I want to learn a whole additional set of commands for vim.

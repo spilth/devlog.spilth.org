@@ -1,0 +1,12 @@
+---
+title: 2012-12-14
+layout: post
+---
+2012-12-14T13:27:42-05:00	Often I want to look at the contents of a tar file before exploding it, incase it wants to explode everything into the current directory.
+2012-12-14T13:28:10-05:00	So I should use `tar -tf filename`, where -t is the --list shortcut.
+2012-12-14T13:45:24-05:00	Interesting refactoring site mention on the [Ruby5 Podcast](http://ruby5.envylabs.com/): [refactr.it](http://www.refactr.it/)
+2012-12-14T16:34:40-05:00	IDEA: extract links from logs and display in a sidebar
+2012-12-14T16:51:43-05:00	Giving the [Solarized](http://ethanschoonover.com/solarized) color scheme a try in my terminal and vim. Light version is too light for me and both of them don't feel like they have enough contrast overall. Will see if I hate it by the end of the day.
+2012-12-14T16:57:18-05:00	It was mementioned in this blog post [Love Your Terminal](http://blog.andrewhays.net/love-your-terminal)
+2012-12-14T20:48:59-05:00	I'm reading through [Jekyll's source code](https://github.com/mojombo/jekyll/tree/master/lib/jekyll) to figure out how Generators work and am learning a lot!
+2012-12-14T21:13:46-05:00	Collecting and organizing some notes as I go through the code. Wonder if it would've been more interesting to have logged it live here. Maybe I'll try that next time. Could've even made for an interesting screencast.

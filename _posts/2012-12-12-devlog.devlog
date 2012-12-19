@@ -1,0 +1,11 @@
+---
+title: 2012-12-12
+layout: post
+---
+2012-12-12T12:39:33-05:00	This is the greatest way I've ever seen to learn vim: [VIM Adventures](http://vim-adventures.com/)
+2012-12-12T12:44:21-05:00	TODO: Turn Image URLs into local images (wget the image, store locally, generate thumbnail with minimagick and convert to image tag)
+2012-12-12T12:55:39-05:00	Happy belated vim birthday to me! [https://github.com/spilth/dotfiles/commit/1764e848db1c14d4192f11d0bc0777d73e30e07c#files/.vimrc](https://github.com/spilth/dotfiles/commit/1764e848db1c14d4192f11d0bc0777d73e30e07c#files/.vimrc)
+2012-12-12T13:19:50-05:00	Trying to add Google Custom Search but struggling with the look and feel of it.
+2012-12-12T13:21:34-05:00	A good article on Jekyll and Twitter Bootstrap with lots of good links [Jekyll Plus Twitter Bootstrap on S3](http://www.nateware.com/jekyll-plus-twitter-bootstrap-on-s3.html#.UMjIvqTyYRt)
+2012-12-12T14:49:37-05:00	An updated screenshot of my tmux-vim setup: {% image tmux-vim.png %}
+2012-12-12T17:19:35-05:00	Sometimes this just feels like my own personal Twitter.
